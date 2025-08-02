@@ -1,10 +1,10 @@
 let examStartTime = new Date(2025, 7, 2, 12, 30, 0); // Aug 2, 10:30 AM
-let examEndTime = new Date(2025, 7, 2, 13, 30, 0);   // Aug 2, 6:30 PM
+let examEndTime = new Date(2025, 7, 2, 18, 30, 0);   // Aug 2, 6:30 PM
 
 function updateCountdown() {
   let now = new Date();
 
-  // 🎉 AFTER 6:30 PM - SHOW CONGRATS MESSAGE AND GIF
+  // AFTER 6:30 PM SHOW CONGRATS MESSAGE AND GIF
   if (now >= examEndTime) {
   document.getElementById("h10").innerText = "Mission Accomplished: UPCAT🤞☑️";
   document.getElementById("p1").innerText = "";
