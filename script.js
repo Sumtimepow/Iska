@@ -4,7 +4,7 @@ let examEndTime = new Date(2025, 7, 2, 18, 30, 0);   // Aug 2, 6:30 PM
 function updateCountdown() {
   let now = new Date();
 
-  // AFTER 6:30 PM SHOW CONGRATS MESSAGE AND GIF
+  // AFTER 6:30 PM 
   if (now >= examEndTime) {
   document.getElementById("h10").innerText = "Mission Accomplished: UPCAT🤞☑️";
   document.getElementById("p1").innerText = "";
@@ -12,7 +12,7 @@ function updateCountdown() {
   
    const list = document.getElementById("UnOrList");
 if (list) {
-  list.remove(); // ❌ Remove the entire <ul> including all <li> items
+  list.remove(); //  Remove the entire <ul> including all <li> items
 }
     document.getElementById("countdown").innerText = " 👏 Congratulations you made it! 👏";
     document.getElementById("h21").innerText = "";
@@ -23,7 +23,6 @@ document.getElementById("ContentMessage").innerText = "Hello po! We are so happy
 
     const reminderS = document.getElementById("Reminder-S");
 
-    // ✅ Only add once
     
     if (!document.getElementById("congratsDiv")) {
   const congratsDiv = document.createElement("div");
